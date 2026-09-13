@@ -1,8 +1,3 @@
-/// Konfigurasi satu sesi pertandingan.
-///
-/// Dibuat di [SetupScreen] sebelum permainan dimulai, lalu dibawa ke
-/// [ScoreboardScreen] sebagai sumber kebenaran untuk nama pemain dan
-/// skor maksimal yang menentukan pemenang.
 class MatchSettings {
   final String player1Name;
   final String player2Name;
