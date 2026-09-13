@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-
-/// Palet warna "arena" — gelap dan kontras tinggi, terinspirasi papan skor
-/// pertandingan sungguhan (bukan palet Material default).
 class AppColors {
   AppColors._();
 
@@ -10,11 +7,11 @@ class AppColors {
   static const Color surface = Color(0xFF141B2E);
   static const Color surfaceLine = Color(0xFF232B45);
 
-  // Warna pemain 1: merah energik.
+
   static const Color playerOne = Color(0xFFFF3B5C);
   static const Color playerOneDim = Color(0xFF3A1420);
 
-  // Warna pemain 2: cyan elektrik — kontras hangat vs dingin.
+
   static const Color playerTwo = Color(0xFF00D2FF);
   static const Color playerTwoDim = Color(0xFF0A2C38);
 
@@ -87,7 +84,7 @@ class AppTheme {
   }
 }
 
-/// Style angka skor besar (Orbitron) dipakai di beberapa tempat.
+
 TextStyle scoreDigitStyle({required double size, required Color color}) {
   return TextStyle(
     fontFamily: 'Orbitron',
@@ -98,7 +95,7 @@ TextStyle scoreDigitStyle({required double size, required Color color}) {
   );
 }
 
-/// Style label kapital bergaya "papan nama" (Bebas Neue).
+
 TextStyle arenaLabelStyle({
   required double size,
   required Color color,
