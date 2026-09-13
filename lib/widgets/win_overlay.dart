@@ -31,8 +31,6 @@ class WinOverlay extends StatelessWidget {
           child: Transform.scale(scale: 0.85 + (0.15 * value), child: child),
         );
       },
-      // GestureDetector menyerap semua ketukan di area gelap ini supaya
-      // tidak "tembus" menambah skor pemain di baliknya.
       child: GestureDetector(
         behavior: HitTestBehavior.opaque,
         onTap: () {},
