@@ -8,13 +8,7 @@ maksimal (target menang) yang bisa diatur sebelum permainan dimulai.
 - **Atur skor maksimal sebelum main** — pakai preset umum (11 / 15 / 21 / 25)
   atau atur bebas dengan tombol +/-.
 - **2 pemain**, masing-masing punya nama, warna, dan area ketuk sendiri.
-- Tampilan bergaya papan skor arena: gelap, kontras tinggi, angka besar
-  bergaya digital (font Orbitron), indikator **MATCH POINT**, dan bar progres
-  menuju skor maksimal.
-- Saat pertandingan dimulai, layar otomatis berputar ke **mode lanskap** dan
-  sisi Pemain 2 sengaja **dibalik 180°** — supaya kalau ponsel diletakkan di
-  meja di antara dua pemain, keduanya tetap membaca skor masing-masing dengan
-  posisi tegak, seperti papan skor sungguhan.
+- Tampilan bergaya papan skor arena: gelap, kontras tinggi, angka besar, indikator **MATCH POINT**
 - Tombol koreksi (–) untuk membetulkan salah ketuk, tombol reset, dan
   konfirmasi sebelum membatalkan pertandingan yang sedang berjalan.
 - Layar kemenangan dengan animasi, tombol **MAIN LAGI** (skor direset,
@@ -59,7 +53,7 @@ maksimal (target menang) yang bisa diatur sebelum permainan dimulai.
 1. Di layar awal, isi nama Pemain 1 dan Pemain 2 (boleh dikosongkan, nanti
    memakai nama default).
 2. Atur skor maksimal untuk menang, lalu tekan **MULAI PERTANDINGAN**.
-3. Layar berputar ke mode lanskap. Ketuk di area masing-masing pemain untuk
+3. Layar berputar ke mode landscape. Ketuk/tekan di area masing-masing pemain untuk
    menambah skor; tombol kecil (–) di dekat garis tengah untuk mengoreksi.
 4. Saat salah satu pemain mencapai skor maksimal, layar kemenangan muncul.
    Pilih **MAIN LAGI** untuk rematch dengan pengaturan yang sama, atau
@@ -80,9 +74,3 @@ lib/
 assets/fonts/                   # Font Orbitron & Bebas Neue (SIL OFL)
 test/widget_test.dart           # Tes dasar (smoke test)
 ```
-
-## Catatan font
-
-Font **Orbitron** dan **Bebas Neue** disertakan di `assets/fonts/` di bawah
-lisensi SIL Open Font License — bebas dipakai dan didistribusikan ulang
-bersama aplikasi ini.
