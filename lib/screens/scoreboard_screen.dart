@@ -23,8 +23,6 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
   void initState() {
     super.initState();
     _settings = widget.initialSettings;
-    // Papan skor dipakai berhadapan di antara dua pemain, jadi dikunci ke
-    // mode lanskap seperti papan skor sungguhan yang diletakkan di meja.
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.landscapeLeft,
       DeviceOrientation.landscapeRight,
@@ -159,7 +157,6 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
                       maxScore: _settings.maxScore,
                       accent: AppColors.playerTwo,
                       accentDim: AppColors.playerTwoDim,
-                      flipped: true,
                       isWinner: winner == _settings.player2Name,
                       onIncrement: () => _increment(2),
                       onDecrement: () => _decrement(2),
