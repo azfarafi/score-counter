@@ -5,7 +5,7 @@ maksimal (target menang) yang bisa diatur sebelum permainan dimulai.
 
 ## Fitur
 
-- **Atur skor maksimal sebelum main** — pakai preset umum (11 / 15 / 21 / 25)
+- **Atur skor maksimal sebelum main** gunakan preset (11 / 15 / 21 / 25)
   atau atur bebas dengan tombol +/-.
 - **2 pemain**, masing-masing punya nama, warna, dan area ketuk sendiri.
 - Tampilan bergaya papan skor arena: gelap, kontras tinggi, angka besar, indikator **MATCH POINT**
