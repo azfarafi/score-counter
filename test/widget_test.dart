@@ -13,7 +13,6 @@ void main() {
     await tester.tap(find.text('MULAI PERTANDINGAN'));
     await tester.pumpAndSettle();
 
-    // Setelah mulai, nama default pemain (tanpa input) harus tampil.
     expect(find.text('PEMAIN 1'), findsOneWidget);
     expect(find.text('PEMAIN 2'), findsOneWidget);
   });
@@ -26,7 +25,6 @@ void main() {
 
     expect(find.text('0'), findsNWidgets(2));
 
-    // Ketuk separuh kiri layar (area Pemain 1) untuk menambah skor.
     await tester.tapAt(const Offset(50, 300));
     await tester.pumpAndSettle();
 
