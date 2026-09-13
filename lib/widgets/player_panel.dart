@@ -3,13 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../theme/app_theme.dart';
 
-/// Panel setengah layar untuk satu pemain. Ketuk di mana saja pada panel
-/// untuk menambah skor; tombol kecil di dekat garis tengah mengurangi skor
-/// (untuk mengoreksi kesalahan).
-///
-/// Jika [flipped] true, seluruh panel diputar 180° — dipakai untuk pemain
-/// yang duduk berhadapan di sisi lain meja/ponsel, supaya angka skornya
-/// tetap terbaca tegak dari sudut pandang mereka.
 class PlayerPanel extends StatelessWidget {
   final String name;
   final int score;
@@ -95,20 +88,12 @@ class _PanelContent extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.centerLeft,
             end: Alignment.centerRight,
-            colors: [accentDim.withOpacity(0.55), accentDim.withOpacity(0.15)],
+            colors: [accentDim.withValues(alpha: 0.55), accentDim.withValues(alpha: 0.15)],
           ),
         ),
         child: Stack(
           alignment: Alignment.center,
           children: [
-            // Bar progres tipis di tepi atas panel.
-            Align(
-              alignment: Alignment.topCenter,
-              child: FractionallySizedBox(
-                widthFactor: progress,
-                child: Container(height: 6, color: accent),
-              ),
-            ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -148,11 +133,10 @@ class _PanelContent extends StatelessWidget {
                 ),
               ],
             ),
-            // Tombol koreksi (-1), diletakkan dekat garis tengah.
             Positioned(
               bottom: 18,
               child: Material(
-                color: Colors.black.withOpacity(0.25),
+                color: Colors.black.withValues(alpha: 0.25),
                 shape: const CircleBorder(),
                 child: InkWell(
                   customBorder: const CircleBorder(),
